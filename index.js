@@ -1,5 +1,8 @@
 // Creatng a variable to get the inquirer method from the node package isntalled. 
 var inquirer = require('inquirer');
+// Creating a variable to get the Word constructor function.
+var Word = require('./Word.js')
+
 // Creating the text prompts. 
 inquirer.prompt([
     // Creating the text prompt for the CL. 
@@ -14,3 +17,5 @@ inquirer.prompt([
     //
 
   });
+
+console.log(Word)

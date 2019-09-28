@@ -25,4 +25,4 @@ function Letter(letter) {
 };
 
 // Setting up this constructor function so that Word.js can require it.
-module.exports = Letter
+module.exports = Letter;

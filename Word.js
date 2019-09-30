@@ -26,4 +26,5 @@ function Word(word) {
   };
 };
 
+// Setting up this constructor function to be exported so that index.js can require it.
 module.exports = Word;

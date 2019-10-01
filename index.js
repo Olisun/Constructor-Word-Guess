@@ -28,16 +28,22 @@ function playGame() {
       },
     ])
     .then(function(response) {
-      console.log(response.userInput);
-      // console.log(randomWord.letterObjArray);
-      for (var i = 0; i < randomWord.letterObjArray.length; i++) {
-        console.log(randomWord.letterObjArray[i].letter);
-        if (randomWord.letterObjArray[i].letter === response.userInput) {
-          console.log('YES!');
-        } else {
-          console.log('No matching letter.')
-        }
-      };
+      console.log(randomWord);
+      console.log(`You guessed letter: ${response.userInput}`);
+      randomWord.guessCheck(response.userInput);
+
+      // for (var i = 0; i < randomWord.letterObjArray.length; i++) {
+      //   console.log(`Letter from randomWord: ${randomWord.letterObjArray[i].letter}`);
+      //   if (randomWord.letterObjArray[i].letter === response.userInput) {
+      //     console.log('YES!');
+      //     correctlyGuessed.push(response.userInput);
+      //     console.log(`Corrected Guesses: ${correctlyGuessed}`);
+      //   } else {
+      //     console.log('No matching letter.');
+      //     incorrectlyGuessed.push(response.userInput);
+      //     console.log(`Incorrect Guesseses: ${incorrectlyGuessed}`);
+      //   }
+      // };
       // if (randomWord.includes(response.userInput)) {
       //   console.log('==============================================');
       //   console.log('You got a letter!')

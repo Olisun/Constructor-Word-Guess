@@ -1,5 +1,7 @@
 # Constructor-Word-Guess
 
+## *** Since this is an optional assignment, this project is being tabled until a later date (so I can focus my attention on the next mandatory assignment.) ***
+
 ## Screen Shot of App Cycle:
 
 ![](images/screen-shot-main.png)
